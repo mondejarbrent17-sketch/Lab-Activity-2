@@ -3,20 +3,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Vehicle vehicle1 = new Vehicle("Toyota", "Vios", 2015);
-        Vehicle vehicle2 = new Vehicle("Honda", "Civic", 1995);
-        Vehicle vehicle3 = new Vehicle("Ford", "Ranger", 2020);
 
-        vehicle1.displayInfo();
-        System.out.println("Age: " + vehicle1.calculateAge());
-        System.out.println("Vintage: " + vehicle1.isVintage());
+    
+        Vehicle v1 = new Vehicle("Toyota", "Vios", 2015);
+        Vehicle v2 = new Vehicle("Honda", "Civic", 1995);
+        Vehicle v3 = new Vehicle("Ford", "Ranger", 2020);
+
+        v1.displayInfo();
+        System.out.println("Age: " + v1.calculateAge());
+        System.out.println("Vintage: " + v1.isVintage());
         
-        vehicle2.displayInfo();
-        System.out.println("Age: " + vehicle2.calculateAge());
-        System.out.println("Vintage: " + vehicle2.isVintage());
+        v2.displayInfo();
+        System.out.println("Age: " + v2.calculateAge());
+        System.out.println("Vintage: " + v2.isVintage());
 
-        vehicle3.displayInfo();
-        System.out.println("Age: " + vehicle3.calculateAge());
-        System.out.println("Vintage: " + vehicle3.isVintage());
+        v3.displayInfo();
+        System.out.println("Age: " + v3.calculateAge());
+        System.out.println("Vintage: " + v3.isVintage());
     }
 }
