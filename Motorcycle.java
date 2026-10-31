@@ -1,14 +1,22 @@
 public class Motorcycle extends Vehicle {
-    private String transmission;
 
-    public Motorcycle(String brand, String model, int year, String transmission) {
-        super(brand, model, year);
-        this.transmission = transmission;
+    @Override
+    public void moveForward() {
+        System.out.println("A motorcycle moves forward");
     }
 
     @Override
-    public void displayInfo() {
-        super.displayInfo();
-        System.out.println("Transmission: " + transmission);
+    public void moveBackward() {
+        System.out.println("A motorcycle moves backward");
+    }
+
+    @Override
+    public void moveLeft() {
+        System.out.println("A motorcycle moves left");
+    }
+
+    @Override
+    public void moveRight() {
+        System.out.println("A motorcycle moves right");
     }
 }
