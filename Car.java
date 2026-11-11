@@ -1,4 +1,5 @@
-public class Car extends Vehicle {
+
+public class Car extends Vehicle implements Serviceable {
 
     @Override
     public void moveForward() {
@@ -18,5 +19,10 @@ public class Car extends Vehicle {
     @Override
     public void moveRight() {
         System.out.println("A car moves right");
+    }
+
+    @Override
+    public void service() {
+        System.out.println("Car: check oil and brakes.");
     }
 }
